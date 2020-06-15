@@ -5,6 +5,7 @@
 
 
   
-* [Head First Java](_posts\index.md)
+* [Head First Java](_posts\Head-First-Java-Note.md)
+* [Markdown使用笔记](_posts\Markdown笔记.md)
 
 
