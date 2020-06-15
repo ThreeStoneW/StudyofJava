@@ -11,7 +11,7 @@
 10. Chapter10
 11. Chapter11
 12. Chapter12
-13. Chapter13(# Chapter13 使用Swing)
+13. [Chapter13](#chapter13-使用swing)
 14. Chapter14
 15. Chapter15
 # Chapter13 使用Swing
