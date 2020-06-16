@@ -68,7 +68,7 @@ public class BorderlayoutExample {
 
 }
 ```
-![](/styles\images\Chapter13\BorderLayout.png.jpg)
+![](/styles/images/Chapter13/BorderLayout.png.jpg)
 
 
 
