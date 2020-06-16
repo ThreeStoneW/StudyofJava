@@ -68,10 +68,14 @@ public class BorderlayoutExample {
 
 }
 ```
-![](/styles\images\Chapter13\BorderLayout.png.jpg)
-<div align=center>
-<img width='150' height='150' src="https://github.com/ThreeStoneW/StudyofJava/blob/master/styles/images/Chapter13/BorderLayout.png.jpg"/>
-</div>
+
+|  结果  |
+| :---------------:|
+| ![](/styles\images\Chapter13\BorderLayout.png.jpg)|
+
+
+
+
 
 
 
