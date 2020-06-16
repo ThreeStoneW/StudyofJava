@@ -69,7 +69,8 @@ public class BorderlayoutExample {
 }
 ```
 <div align="center">
-![](/styles\images\Chapter13\BorderLayout.png.jpg)
+<scr="/styles\images\Chapter13\BorderLayout.png.jpg"/>
+</div>
 
 
 
