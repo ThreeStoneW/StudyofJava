@@ -68,7 +68,11 @@ public class BorderlayoutExample {
 
 }
 ```
-![](/styles/images/Chapter13/BorderLayout.png.jpg)
+| 结果 |
+| :----:  |
+|![](../styles/images/Chapter13/BorderLayout.png.jpg)|
+
+
 
 
 
