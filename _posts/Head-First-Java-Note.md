@@ -1,10 +1,10 @@
 # Head First Java
-1. Chapter1
-2. Chapter2
-3. Chapter3
-4. Chapter4
-5. Chapter5
-6. Chapter6
+1. [Chapter1 进入Java的世界](#chapter1-进入java的世界)
+2. [Chapter2 类与对象](#chapter2-类与对象)
+3. [Chapter3 primitive主数据类型和引用](#chapter3-primitive主数据类型和引用)
+4. [Chapter4 方法操作实例变量](#chapter4-方法操作实例变量)
+5. [Chapter5 编写程序](#chapter5-编写程序)
+6. [Chapter6 Java的API](#chapter6-java的api)
 7. Chapter7
 8. Chapter8
 9. Chapter9
@@ -14,6 +14,123 @@
 13. [Chapter13 运用Swing](#chapter13-运用swing)
 14. Chapter14
 15. Chapter15
+
+
+## Chapter1 进入Java的世界
+### Java的工作方式
++ 编写源代码`文件名.java`,文件名要与类名相同
++ 用编译器检查错误并改正，错误清零后输出可执行文件`文件名.class`（PS：现在许多IDE都自带差错功能）
++ 使用Java虚拟机JVM运行.class文件
+
+### Java的程序结构
++ 类存于源文件里  
++ 方法存于类中  
++ 语句存于方法中
+
+## Chapter2 类与对象
+
++ 类是对象的蓝图、模板
++ 对象是根据类创建出的已知的事物
++ 对象本身已知的事物称为实例变量
++ 对象可以执行的动作称为方法
+
+### main()的两种用途
++ 测试真正的类
++ 启动Java程序
+
+## Chapter3 primitive主数据类型和引用
+### primitive主数据类型
+| 结果 | 位数 | 值域 |
+|:----:|:----:|:----:|
+|boolean|-|true或false|
+|char|16bit|0-65535|
+|byte|8bit|-128-127|
+|short|16bit|-32768-32767|
+|int|32bit|-2147483648-2147483647|
+|long|64bit|-很大-+很大|
+|float|32bit|范围规模可变|
+|double|64bit|范围规模可变|
+
+### Java注重类型
++ 它不允许两个不同类型变量之间的赋值
++ 一旦数组被声明出来，就只能装入所声明的类型
+
+>注意：对于整数类型或者浮点数类型，位数大的不能赋给位数小的，但是位数小的可以赋给位数大的，这被称为隐含展开
+
+## Chapter4 方法操作实例变量
++ 可以向方法中传入参数，传入的是实参，传入到方法中就成了形参
++ Java是通过值传递的，也就是说通过拷贝传递
++ 可以设定返回值类型，从方法中取返回值
++ 传入与传出方法的值类型可以隐含地放大或是明确地缩小
+
+
+
+### 非primitive主数据类型——对象
++ 没有对象变量这种东西存在
++ 只有引用`reference`到对象的变量
++ 对象引用变量保存的是存取对象的方法
++ `reference`不是对象的容器，而是类似指向对象的指针
+
++ 数组也是一个对象
+
+### Java命名规则
++ 名称必须以字母、下划线或$开头，不能用数字开头
++ 除了第一个字符，后面可以用数字
++ 避开保留字
+
+### 封装
++ 将实例变量标记为私有`private`
++ 将getters和setters标记为`public`
+
+### 声明与初始化实例变量
+>示例变量永远都有默认值。如果你没有明确的赋值给示例变量，或者没有调用setter，示例变量还是会有值
+
+|类型|默认值|
+|:---:|:---:|
+|integers|0|
+|floating points|0.0|
+|booleans|false|
+|references|null|
+
++ 不是所有变量都有默认值，局部变量没有默认值，使用前需要初始化
+
+### 变量的比较
++ `==`可以判断primitive主数据类型是否相等或者两个引用变量是否引用到堆上的同一个对象
++ 使用`equals()`来判断两个变量是否在意义上相等
+
+## Chapter5 编写程序
+#### string-int类型转换
+`Integer.parseInt()`
+
+### for循环
+ + 基本的for循环`for(int i=0;i<100;i++)`  
+ + 加强的for循环`for(String name:nameArray)`
+
+ ## Chapter6 Java的API
+
+ ### Arraylist的操作
+```java
+ArrayList<Egg> myList=new ArrayList<Egg>();
+//创建
+Egg s=new Egg();
+myList.add(b);
+//加入元素
+int theSize=myList.size();
+//查询大小
+boolean isIn=myList.contains(s);
+//查询是否有特定元素
+int idx=myList.indexOf(b);
+//查询特定元素存在的位置，若元素重复则只返回第一个位置，
+//若无此元素则返回-1
+boolean empty=myList.isEmpty();
+//判断集合是否为空
+myList.remove(s);
+//从集合中删除特定元素
+myList.remove(0);
+//从集合中删除特定位置的元素
+```
+
+
 ## Chapter13 运用Swing
 
 
@@ -345,3 +462,4 @@ public void valueChanged(ListSelectionEvent lse){
     }
 ```
 ### [综合程序示例](../code/HeadFirstJava/BeatBox.java)
+
